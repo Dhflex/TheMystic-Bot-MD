@@ -1,3 +1,4 @@
+// https://whatsapp.com/channel/0029Vap0nYeE50UfIIzCsr35
 //import db from '../lib/database.js'
 const free = 7000
 const prem = 200000
@@ -10,7 +11,6 @@ let handler = async (m, {
     global.db.data.users[m.sender].exp += isPrems ? prem : free
     m.reply(`
 🎁 *مبروك هديتك اليوميه*
-
 ▢ *لقد حصلت علي:*
 🆙 *اكسبي* : +${isPrems ? prem : free}`)
     global.db.data.users[m.sender].lastclaim = new Date * 1
