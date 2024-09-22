@@ -25,7 +25,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
 await conn.sendMessage(m.chat'💝', { react: { text: '📂', key: m.key } })
-const OBITO = ' https://whatsapp.com/channel/0029VanIroV7YScwYEsjNv1N  '
+const OBITO = 'https://telegra.ph/file/5fc26caa7580823ce9dda.jpg'
 const mentionId = m.key.participant || m.key.remoteJid;
 
 conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `gataVidMenu`}, body: { text: `*• ──╾⊱﹝⚡️﹞⊰╼── •*
@@ -360,7 +360,7 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                    },
                    {
              name: "cta_url",
-             buttonParamsJson: '{"display_text":"⌈📲╎قـنـاة الـمـطـور╎📲⌋","url":"https://whatsapp.com/channel/0029Vag5dT01t90dVIah1X1p","merchant_url":"https://whatsapp.com/channel/0029Vag5dT01t90dVIah1X1p"}'
+             buttonParamsJson: '{"display_text":"⌈📲╎قـنـاة الـمـطـور╎📲⌋","url":" https://whatsapp.com/channel/0029Vag5dT01t90dVIah1X1p","merchant_url":"https://whatsapp.com/channel/0029Vag5dT01t90dVIah1X1p "}'
                           }
                       ]
                   }
